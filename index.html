@@ -1,50 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="assets/css/style.css">
+	<title>Bootstrap Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="assets/css/style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
-
 <body>
+	<nav class="navbar navbar-custom">
+		<div class="container">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+     		 </button>
+				<a class="navbar-brand" href="index.html"><span id="white">TAMMY LE</span></a>
+			</div>
 
-<header id="masthead">
-  	<div class="container">
-		<a href="index.html" id="logo">TAMMY LE</a>
-		<nav>
-        	<a href="index.html">About</a>
-        	<a href="portfolio.html">Portfolio</a>
-        	<a href="contact.html">Contact</a>
-		</nav>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+        		<li class="active"><a href="index.html">ABOUT</a></li>
+        		<li><a href="portfolio.html">PORTFOLIO</a></li>
+        		<li><a href="contact.html">CONTACT</a></li>
+      		</ul>
+      		</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 bio">
+				<h3>About Me</h3>
+				<hr>
+				<div class="pull-left"><img class="img-responsive" src="assets/images/profile.jpg"/></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis sunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis suntLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis suntLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, dignissimos pariatur nostrum optio enim ut quas! Exercitationem deserunt porro, quod hic saepe quia, accusantium dignissimos quo non aliquid ea! </p>
+			</div>
+			<div class="col-sm-4">
+        		<div class="panel panel-default">
+          			<div id="connect">
+            		<h3>Connect</h3>
+            		<hr>
+          			</div>
+          			<div class="panel-body text-center">
+            		<a href="https://github.com/letam245" target="_blank"><img src="assets/images/github-icon.png" class="social" alt="github"/></a>
+					<a href="https://www.linkedin.com/in/tammyle245/" target="_blank"><img src="assets/images/linkedin-icon.png" class="social" alt="linkedin"/></a>
+					<a href="https://stackoverflow.com/users/8112919/tammy-le" target="_blank"><img src="assets/images/overflow-icon.png" class="social" alt="overflow"/></a>
+					</div>
+          		</div>
+			</div>
+		</div>
 	</div>
-</header>
 
+		
 
-<div class="content">
-	<section>
-		<h2>about me</h2>
-		<hr>
-		<img src="assets/images/profile.jpg" alt="" width="200" height="200">
-		<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially. </p>
-	</section>
-	
-	<aside>
-		<h2>connect</h2>
-		<hr>
-		<a href="https://github.com/letam245" target="_blank"><img src="assets/images/github-icon.png" width="50" height="50" alt="github"></a>
-		<a href="https://www.linkedin.com/in/tammyle245/" target="_blank"><img src="assets/images/linkedin-icon.png" width="50" height="50" alt="linkedin"></a>
-		<a href="https://stackoverflow.com/users/8112919/tammy-le" target="_blank"><img src="assets/images/overflow-icon.png" width="50" height="50" alt="overflow"></a>
-	</aside>
-</div>
-
-<footer>
-	<p>&copy; Copyright Tammy Le</p>
+<footer class="footer">
+	<div class="container">
+		<p class="text-center">&copy; Copyright Tammy Le</p>
+	</div>
 </footer>
 
 
 </body>
 </html>
-
-
-
-
