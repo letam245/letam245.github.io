@@ -1,0 +1,518 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  	color: #777777;
+  	background: #ffffff;
+  	background-image:url(../images/concretebg.png);
+	width:100%;
+	height:100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*--------header----------------*/
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top:0;
+  left:0;
+  color: #fff;
+  background: #fff;
+  border-bottom: 3px solid darkorange;
+}
+
+#logo {
+  float: left;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  margin-left:8px;
+  background: darkorange;
+}
+
+
+.container {
+	width: 100%;
+  	max-width: 960px;
+  	margin: 0 auto;
+  	clear: both;
+
+
+}
+
+
+nav {
+	float: right;
+	margin-top:15px;
+
+}
+
+
+nav a {
+	display: inline-block;
+  	padding-left: 20px;
+  	color: darkorange;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	font-size: 14px;
+  	font-weight: bolder;
+}
+
+
+nav a:hover, a:active, a:focus {
+	color: #666666;
+}
+	
+
+/*--------------bmain section-----------*/
+
+.content{
+	width: 960px;
+	margin:100px auto;
+	overflow: auto;
+
+}
+
+
+section  {
+	width: 650px;
+	background-color: #ffffff;
+	float:left;
+	border: 1px solid #dddddd;
+	left:0px;
+
+
+}
+
+
+h2{
+	margin: 30px;
+	color: darkorange;
+	text-transform: uppercase;
+}
+
+
+hr{
+	border: 1px solid darkorange; 
+	margin: 0 30px;
+}
+
+
+img {
+	margin: 30px;
+	float:left;
+}
+
+
+section p {
+	margin: 30px;
+	text-align: justify;
+}
+
+
+/*-----------portfolio gallery style-------------*/
+
+
+.textbar{
+	position: relative;
+	width: 100%;
+
+}
+
+
+.textbar p {
+	position: absolute;
+	color: white;
+	background-color: darkorange;
+	width: 150px;
+	padding: 5px 0;
+	margin-top:130px;
+	text-align: center;
+	opacity: 0.8;
+
+}
+
+
+.textbar ul li { 
+	display:inline-block;
+	list-style: none; 
+	margin: 0 25px 0 -40px;
+}
+
+.textbar img {
+	border: 2px solid darkorange;
+
+} 
+				
+.textbar img:hover, img:active {
+	border:2px solid #666666;		 		
+}
+
+
+
+/*--------------FORM STYLING------------------------*/
+
+.form {
+
+	padding:30px;
+	
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}	
+
+input[type=text]:focus {
+    border: 1px solid darkorange;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea:focus {
+  	border: 1px solid darkorange;
+}
+
+
+input[type=submit] {
+    width: 20%;
+    background-color: darkorange;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    text-transform: uppercase;
+}	
+
+input[type=submit]:hover {
+    background-color: transparent;
+    border: 1px solid darkorange;
+    color:darkorange;
+}	
+
+
+
+
+/*---------------aside section---------------*/
+aside {
+	float: right;
+	width: 270px;
+	background-color: #ffffff;
+	text-align: center;
+	border: 1px solid #dddddd;
+}
+
+
+aside img {
+	margin:30px 10px 30px 25px;
+}
+
+aside a img:hover {
+	background-color: darkorange;
+	border:none;
+
+}
+
+/*--------------FOOTER STYLING---------------------*/
+
+
+footer {
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	background-color: darkorange;
+	width: 100%;
+	text-align: center;
+	border-top: 5px solid darkgray;
+}
+
+
+footer p{
+	text-transform: uppercase;
+	color:white;
+	letter-spacing: 0.1em;
+}
+
+.glyphicon glyphicon-home{
+	width: 500px;
+	height:500px;
+}
+
+
+/*-------------MEDIA QUERIES-------------*/
+
+
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+	/*----------------header section------------*/
+	#logo {
+		width: 102%;
+		margin-left: -2px;
+		
+	}
+
+	nav  {
+		float:left;
+
+	}
+
+	nav a {
+		padding-left: 10px;
+		text-align: right;
+		margin-left:35px;
+		margin-bottom: 12px;
+
+	}
+	/*-------------body section----------------*/
+	.content   {
+		width: 98%;
+	}
+
+	section {
+		width: 98%;
+		margin-top:20px;
+	}
+
+	section img  {
+		width: 30%;
+		height: 30%;
+		margin: 30px 15px 10px 30px;
+	}
+
+	section p {
+		font-size: 12px;
+		text-align: left;
+	}
+
+	aside {
+		width: 98%;
+		margin-right:8px;
+		margin-top: 25px;
+	}
+
+	aside h2 {
+		text-align: left;
+	}
+
+	aside img {
+		
+		margin: 30px 0px 30px 30px;
+	}
+
+	/*-----------portfolio--------*/
+
+	.textbar img  {
+		width: 90%;
+		height: 90%;
+	}
+
+	.textbar p {
+		width: 84%;
+		padding: 10px 0px;
+		margin-top:70%;
+	}
+}
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 640px) {
+	
+	#logo {
+		float:left;
+  		width: 150px;
+  		height: 50px;
+		margin-left:15px;
+		
+	}
+	
+	nav  {
+		float:right;
+
+	}
+
+	nav a {
+		padding-left: 5px;
+		text-align: right;
+		margin-right: 10px;
+	
+}
+
+/*-------------body section----------------*/
+
+.content {
+
+		margin-top:60px;
+}
+
+section p {
+		font-size: 16px;
+		text-align: left;
+	}
+
+section img {
+		width:200px;
+		height:200px;
+	}
+
+aside {
+		
+		margin-right:14px;
+		
+	}
+
+
+/*-----------portfolio--------*/
+
+.textbar li   { 
+	width: 50%;
+	height: 50%;
+	
+}
+
+	
+.textbar p {
+		width: 42%;
+		margin-top:30%;
+	}
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+.content {
+	max-width:960px;
+	}
+
+#logo {
+	margin-left:8px;
+	}
+
+.textbar li {
+	width: 90%;
+	height: 90%;
+		
+	}
+
+.textbar img {
+	margin-left:70px;
+}
+
+.textbar p {
+	width:80%;
+	margin-left:70px;
+	margin-top:300px;
+}
+	
+section  {
+	float:left;
+	width: 60%;
+}
+	
+aside {
+	width:35%;
+	margin-top:20px;
+		
+}
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 980px) {
+	
+	.content{
+		width:960px;
+	}
+
+
+	
+	section  {
+		float:left;
+		width: 60%;
+	}
+
+
+
+
+	aside {
+		width:35%;
+		margin-top:20px;
+		
+	}
+
+
+	.textbar li {
+		width: 45%;
+		height: 45%;
+		padding-right: 30px;
+
+	}
+
+	.textbar img {
+	margin-left:30px;
+
+
+	}
+
+
+	.textbar p {
+	margin-left:30px;
+	width: 33%;
+	margin-top:150px;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+	
+
+	
+}
+
+
+
+
