@@ -1,0 +1,268 @@
+#portfolio{
+	margin: 50px 0 30px 0;
+}
+ ul.filterBtn {
+	list-style: none;
+	
+}
+
+.filter-button {
+	border: none;
+}
+
+
+/* =========gallery -======== */
+
+.gallery_product img{
+	border: 1px solid #FF7D18;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button{
+    font-size: 15px;
+    text-align: left;
+	color: #FF7D18;
+	margin-bottom: 20px;
+}
+
+.filter-button:hover
+{
+    color: #4F4F4F;
+	animation: pulse2 .3s 2;
+
+}
+
+@keyframes pulse {
+	0% { transform: scale(1); }
+	35% { transform: scale(1.4); }
+	100% { transform: scale(1); }
+  	}
+  
+	@keyframes pulse2 {
+	0% { transform: scale(1); }
+	35% { transform: scale(1.3); }
+	100% { transform: scale(1); }
+}
+
+
+
+.filter-button:active, .filter-button:focus, .filter-button:visited {
+	color: #FF1F99;
+	outline: none;
+	box-shadow: none;
+}
+
+.port-image{
+    width: 100%;
+}
+
+.gallery_product{
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/*========== contact  ==========*/
+#contact {
+	margin: 80px 0;
+	font-family: 'FontAwesome', sans-serif!important;
+}
+
+.contactLeft > hr {
+    border-top: 1px solid #FF7D18;
+    width: 85%;
+    margin: 30px 0;
+}
+
+.contactLeft > h2 {
+	text-transform: uppercase;
+    font-size: 25px;
+	color: #FF7D18;
+    font-weight: bold;
+	letter-spacing: 0.05em;
+	margin-top:40px;
+}
+
+a.contact  {
+	color: #4F4F4F
+}
+
+a.contact:hover {
+	color: #FF7D18;
+	text-decoration: none;
+}
+.form-control:focus {
+	outline: 0;
+	box-shadow: none!important;
+	color: #4F4F4F;
+	border-color: #FF1F99!important;
+	border: 1px solid #FF1F99;
+	border-radius: 5px;
+}
+
+textarea.form-control, input.form-control {
+	border: 1px solid #FF7D18;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+	outline: none!important;
+	box-shadow: none!important;
+}
+
+.contactBtn {
+    color: #FF7D18;
+    margin-bottom: 120px;
+	text-transform: uppercase;
+	letter-spacing: 1em;
+}
+
+.contactBtn:hover {
+	animation: pulse .3s 2;
+}
+
+/* input.form-control:hover, input.form-control:active, input.form-control:focus input.form-control:visited {
+	border: 1px solid #FF1F99;
+	border-radius: 5px;
+	box-shadow: none;
+	outline: none;
+} */
+
+
+
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1366px){
+
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+	
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	
+}
+	
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+ 
+	.filterBtn li {
+		display: inline;
+	}
+
+	.filterBtn {
+		margin-left:-30px;
+	}
+
+	.contactLeft {
+		margin-bottom: 30px;
+	}
+
+	.contactLeft > hr {
+		width: 100%;
+	}
+
+	#contact{
+		margin:20px 0 80px 0;
+		text-align: center;
+	}
+
+	input.form-control {
+		margin-bottom: 30px;
+	}
+
+	textarea.form-control {
+		margin-top: -15px;
+	}
+
+	.contactBtn{
+		margin-top: -15px;
+		
+	}
+
+
+}
+	
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+	
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------MEDIA QUERIES-------------*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+
+	
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+ 
+}
+
+
+/* Small Devices, Tablets */	
+@media only screen and (min-width: 768px) {
+	/* .navbar-custom .navbar-nav > li > a {
+		margin-left: 100px!important;
+	} */
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+	/* .navbar-custom .navbar-nav > li > a {
+		margin-left: 170px!important;
+	} */
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+	/* .navbar-custom .navbar-nav > li > a {
+		margin-left: 220px!important;
+	}	 */
+}

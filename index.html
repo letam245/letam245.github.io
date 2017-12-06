@@ -1,68 +1,405 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Bootstrap Portfolio</title>
+	<meta charset="utf-8">
+	<title>Le.T.Create</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="assets/css/style.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Local style sheets -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/portfolio.css">
+	<!-- Bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<!-- link to the jQuery Library -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+	<!-- Font Awesome Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 </head>
-<body>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- =================== nav bar =================== -->
 	<nav class="navbar navbar-custom">
 		<div class="container">
 			<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span> 
-     		 </button>
-				<a class="navbar-brand" href="index.html"><span id="white">TAMMY LE</span></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<img class="logoImg" src="assets/img/logo.png" alt="" />
+					</span>
+				</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-right">
-        		<li class="active"><a href="index.html">ABOUT</a></li>
-        		<li><a href="portfolio.html">PORTFOLIO</a></li>
-        		<li><a href="contact.html">CONTACT</a></li>
-      		</ul>
-      		</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#bio" data-hover="Profile">Profile</a>
+					</li>
+					<li>
+						<a href="#threeD" data-hover="Work">Work</a>
+					</li>
+					<li>
+						<a href="#contact" data-hover="Contact">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 bio">
-				<h3>About Me</h3>
-				<hr>
-				<div class="pull-left"><img class="img-responsive" src="assets/images/profile.jpg"/></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis sunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis suntLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis suntLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut ab numquam illum necessitatibus nobis ipsam ex. Atque accusamus explicabo earum reiciendis veritatis dolorum mollitia, laudantium, sapiente dolorem perferendis sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam, dignissimos pariatur nostrum optio enim ut quas! Exercitationem deserunt porro, quod hic saepe quia, accusantium dignissimos quo non aliquid ea! </p>
-			</div>
-			<div class="col-sm-4">
-        		<div class="panel panel-default">
-          			<div id="connect">
-            		<h3>Connect</h3>
-            		<hr>
-          			</div>
-          			<div class="panel-body text-center">
-            		<a href="https://github.com/letam245" target="_blank"><img src="assets/images/github-icon.png" class="social" alt="github"/></a>
-					<a href="https://www.linkedin.com/in/tammyle245/" target="_blank"><img src="assets/images/linkedin-icon.png" class="social" alt="linkedin"/></a>
-					<a href="https://stackoverflow.com/users/8112919/tammy-le" target="_blank"><img src="assets/images/overflow-icon.png" class="social" alt="overflow"/></a>
+	<!-- =================== body part =================== -->
+	<div id="header" class="header">
+		<div class="container">
+			<div class="title">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Hello There!</p>
+						<h1>I am Le Tam</h1>
+						<div class="col-sm-6 col-offset-3">
+							<p class="descript">And I am a</p>
+						</div>
+
 					</div>
-          		</div>
+				</div>
+			</div>
+			<div class="row whoAmI">
+				<div class="col-sm-3">
+					<p>Web Developer</p>
+					<hr>
+					<br>
+					<h6>Full Stack</h6>
+				</div>
+
+				<div class="col-sm-3">
+					<p>Designer</p>
+					<hr>
+					<br>
+					<h6>UX/UI</h6>
+				</div>
+
+				<div class="col-sm-3">
+					<p>Marketer</p>
+					<hr>
+					<br>
+					<h6>Advertising</h6>
+				</div>
+
+				<div class="col-sm-3 hidden-xs"></div>
 			</div>
 		</div>
 	</div>
 
-		
+	<!-- =================== about me =================== -->
+	<div id="bio">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1> About Me </h1>
+			</div>
 
-<footer class="footer">
-	<div class="container">
-		<p class="text-center">&copy; Copyright Tammy Le</p>
+		</div>
 	</div>
-</footer>
+
+	<div id="about">
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="assets/img/profilePic.jpg" alt="profile image" class="profileImg hidden-xs">
+			</div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-4 profileSec">
+				<h2>Le.T.create</h2>
+				<p>Web <span class="plus">+</span> Graphic <span class="plus">+</span> Marketing</p>
+				<hr>
+
+				<h4>Developer:
+					<span class="insideText">  Full Stack Developer (MERN Stack) with focus on clean, pixel-perfect front-end designs and experienced in functional back-end server-side logic, database analysis, Model-View-Controller (MVC), Git and Heroku</span>
+				</h4>
+
+				<h4>Designer:
+					<span class="insideText"> UX/UI designer with B.F.A in Graphic Design and years of experience in creating effective user-friendly, customer-centered interface and functional designs all the way from mockup to rollout</span>
+				</h4>
+
+				<h4>Marketer:
+					<span class="insideText"> Effective marketing skills and experience in project management, events organizing, campaign planning and advertising strategies</span>
+				</h4>
+				<div id="resumeBtn">
+					<a href="#" class="btn-slide2" download="LeTamResume">
+							<span class="circle2"><i class="fa fa-download"></i></span>
+							<span class="title2">Resume</span>
+							<span class="title-hover2">Click here</span>
+						</a>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3 skills">
+				<h5 id="fn">Front-end:
+					<hr>
+					<ul>
+						<li>HTML <span class="plus">|</span> CSS <span class="plus">|</span> SCSS </li>
+						<li> Bootstrap <span class="plus">|</span> Skeleton </li>
+						<li> JavaScript <span class="plus">|</span> Jquery </li>
+						<li> ReactJS <span class="plus">|</span> ES6 <span class="plus">|</span> Babel</li>
+
+					</ul>
+				</h5>
+				<h5>Back-end:
+					<hr>
+					<ul>
+						<li> Node <span class="plus">|</span> Express <span class="plus">|</span> Yarn </li>
+						<li> Firebase <span class="plus">|</span> AJAX <span class="plus">|</span> REST API’s </li>
+						<li> MongoDB <span class="plus">|</span> MySQL <span class="plus">|</span> Sequelize </li>
+						<li> WordPress <span class="plus">|</span> Sitefinity <span class="plus">|</span> Shopify </li>
+
+					</ul>
+				</h5>
+				<h5>Design:
+					<hr>
+					<ul>
+						<li> Photoshop <span class="plus">|</span> Illustrator </li>
+						<li> Dreamweaver <span class="plus">|</span> Affter Effect </li>
+						<li> InDesign <span class="plus">|</span> Adobe Acrobat </li>
+						<li> Sketch <span class="plus">|</span> Invision </li>
+
+					</ul>
+				</h5>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- =================== develop design deploy =================== -->
+
+	<div id="threeD">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-xs-4">
+					<h2> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Design</h2>
+				</div>
+				<div class="col-xs-4">
+					<h2> <i class="fa fa-laptop" aria-hidden="true"></i> Develop </h2>
+				</div>
+				<div class="col-xs-4">
+					<h2> <i class="fa fa-usb" aria-hidden="true"></i> Deploy </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- =================== portfolio =================== -->
+	<div id="portfolio">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-10">
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter graphic">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter graphic">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter graphic">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter graphic">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-sm-3 col-xs-6 filter web">
+						<img src="http://fakeimg.pl/300x200/" class="img-responsive">
+					</div>
+				</div>
+
+				<div class="col-sm-2">
+					<ul class="filterBtn">
+						<li><button class="btn-small filter-button" data-filter="web">Web</button></li>
+						<li><button class="btn-small filter-button" data-filter="graphic">Graphic</button></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- =================== full package services =================== -->
+	<div id="bio">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1> Full Package Services </h1>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- ============= contact ================ -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 contactLeft">
+					<h2>Contact Me</h2>
+					<hr>
+					<div class="row">
+						<div class="col-md-5">
+							<p><span class="plus">E: </span><a class="contact" href="mailto: le_t_create@yahoo.com"> le_t_create@yahoo.com</a></p>
+						</div>
+						<div class="col-md-5">
+							<p><span class="plus">P: </span><a class="contact" href="tel: 909-767-9995"> 909-767-9995</a></p>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-6 contactRight">
+					<form id="contact-form" action="contact.php" method="post" name="validation" >
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" type="text" placeholder="&#xf044; Name" name="name" id="name" required autocomplete='off' />
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" type="email" placeholder="&#xf003; Email" name="email" id="email" required autocomplete='off'
+								/>
+							</div>
+
+						</div>
+						<br>
+						<textarea class="form-control" id="comment" name="comment" placeholder="&#xf0f6; Comment" rows="5"></textarea>
+						<br><br>
+						<div class="row text-center">
+							<div class="col-sm-12 form-group">
+								
+								<button class="btn contactBtn" id="getHelp" name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!" 
+								> &#xf1d8; Send</button>
+							</div>
+						</div>
+					</form>
+
+				</div>
+
+
+			</div>
+		</div>
+
+		<!-- =================== footer =================== -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<p>&#xf1f9; Copyright Le.T.create</p>
+					</div>
+
+					<!-- <div class="col-xs-2 text-center">
+							<a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+								<span class="glyphicon glyphicon-chevron-up"></span>
+							</a>
+					</div> -->
+
+					<div class="col-xs-2 socialIcon">
+						<a href="https://www.linkedin.com/in/tammyle245/" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+					</div>
+					<div class="col-xs-2 socialIcon">
+						<a href="https://github.com/letam245" target="_blank">
+						<i class="fa fa-github-alt" aria-hidden="true"></i>
+					</a>
+					</div>
+					<div class="col-xs-2 socialIcon">
+						<a href="https://www.instagram.com/_letcreate_/" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		
+		<!-- <script src="assets/js/particles.js"></script>
+		<script src="assets/js/bw-particle.js"></script> -->
+
+
+		<script>
+			$(document).ready(function () {
+
+				$('[data-toggle="tooltip"]').tooltip();
+
+				// Add smooth scrolling to all links in navbar + footer link
+				$(".navbar a, footer a[href='#home']").on('click', function (event) {
+					if (this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 900, function () {
+
+							window.location.hash = hash;
+						});
+					}
+				});
+
+				$(".filter-button").click(function () {
+					var value = $(this).attr('data-filter');
+
+					if (value == "all") {
+						//$('.filter').removeClass('hidden');
+						$('.filter').show('1000');
+					}
+					else {
+						$(".filter").not('.' + value).hide('3000');
+						$('.filter').filter('.' + value).show('3000');
+
+					}
+				});
+
+				if ($(".filter-button").removeClass("active")) {
+					$(this).removeClass("active");
+				}
+				$(this).addClass("active");
+
+			});
+		</script>
+
 
 
 </body>
+
 </html>
