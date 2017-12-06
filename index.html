@@ -34,7 +34,6 @@
 				</button>
 				<a class="navbar-brand" href="index.html">
 					<img class="logoImg" src="assets/img/logo.png" alt="" />
-					</span>
 				</a>
 			</div>
 
@@ -97,7 +96,7 @@
 	</div>
 
 	<!-- =================== about me =================== -->
-	<div id="bio">
+	<div id="bio" class="bio">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h1> About Me </h1>
@@ -131,7 +130,8 @@
 
 				<h4>Marketer:
 					<span class="insideText"> Effective marketing skills and experience in project management, events organizing, campaign planning and advertising
-						strategies</span>
+						strategies
+					</span>
 				</h4>
 				<div id="resumeBtn">
 					<a href="#" class="btn-slide2" download="LeTamResume">
@@ -278,7 +278,7 @@
 				<div class="col-sm-2">
 					<ul class="filterBtn">
 						<li>
-							<button class="btn-small filter-button selected webTab" data-filter="web" >Web</button>
+							<button class="btn-small filter-button selected webTab" data-filter="web">Web</button>
 						</li>
 						<li>
 							<button class="btn-small filter-button selected" data-filter="graphic">Graphic</button>
@@ -291,7 +291,7 @@
 	</div>
 
 	<!-- =================== full package services =================== -->
-	<div id="bio">
+	<div id="fullservices" class="bio">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h1> Full Package Services </h1>
@@ -330,10 +330,10 @@
 					<form id="contact-form" action="contact.php" method="post" name="validation">
 						<div class="row">
 							<div class="col-sm-6 form-group">
-								<input class="form-control" type="text" placeholder="&#xf044; Name" name="name" id="name" required autocomplete='off' />
+								<input class="form-control" type="text" placeholder="&#xf044; Name" name="name" id="name" required autocomplete="off" />
 							</div>
 							<div class="col-sm-6 form-group">
-								<input class="form-control" type="email" placeholder="&#xf003; Email" name="email" id="email" required autocomplete='off'
+								<input class="form-control" type="email" placeholder="&#xf003; Email" name="email" id="email" required autocomplete="off"
 								/>
 							</div>
 
@@ -344,8 +344,8 @@
 						<br>
 						<div class="row text-center">
 							<div class="col-sm-12 form-group">
-								<button class="btn contactBtn" name="submit" type="submit" data-error-message="Please fill the required fields"
-								 data-sending-message="Sending Message" data-ok-message="Your Message has been sent!"> &#xf1d8; Send</button>
+								<button class="btn contactBtn" name="submit" type="submit" data-error-message="Please fill the required fields" data-sending-message="Sending Message"
+								 data-ok-message="Your Message has been sent!"> &#xf1d8; Send</button>
 							</div>
 						</div>
 					</form>
@@ -355,94 +355,94 @@
 
 			</div>
 		</div>
+	</div>
+	<!-- =================== footer =================== -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>&#xf1f9; Copyright Le.T.create</p>
+				</div>
 
-		<!-- =================== footer =================== -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6">
-						<p>&#xf1f9; Copyright Le.T.create</p>
-					</div>
-
-					<!-- <div class="col-xs-2 text-center">
+				<!-- <div class="col-xs-2 text-center">
 							<a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
 								<span class="glyphicon glyphicon-chevron-up"></span>
 							</a>
 					</div> -->
 
-					<div class="col-xs-2 socialIcon">
-						<a href="https://www.linkedin.com/in/tammyle245/" target="_blank">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</a>
-					</div>
-					<div class="col-xs-2 socialIcon">
-						<a href="https://github.com/letam245" target="_blank">
-							<i class="fa fa-github-alt" aria-hidden="true"></i>
-						</a>
-					</div>
-					<div class="col-xs-2 socialIcon">
-						<a href="https://www.instagram.com/_letcreate_/" target="_blank">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a>
-					</div>
+				<div class="col-xs-2 socialIcon">
+					<a href="https://www.linkedin.com/in/tammyle245/" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="col-xs-2 socialIcon">
+					<a href="https://github.com/letam245" target="_blank">
+						<i class="fa fa-github-alt" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="col-xs-2 socialIcon">
+					<a href="https://www.instagram.com/_letcreate_/" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
 
 
-		<!-- <script src="assets/js/particles.js"></script>
+	<!-- <script src="assets/js/particles.js"></script>
 		<script src="assets/js/bw-particle.js"></script> -->
 
 
-		<script>
-			$(document).ready(function () {
-				// hide graphic image on pageload
-				$('.graphic').hide();
+	<script>
+		$(document).ready(function () {
+			// hide graphic image on pageload
+			$('.graphic').hide();
+			$('.filter-button').removeClass('selected');
+			$('.webTab').addClass('selected');
+
+			$('.filter-button').on('click', function () {
 				$('.filter-button').removeClass('selected');
-				$('.webTab').addClass('selected');
-
-				$('.filter-button').on('click', function () {
-					$('.filter-button').removeClass('selected');
-					$(this).addClass('selected');
-				});
-
-
-				$('[data-toggle="tooltip"]').tooltip();
-
-				// Add smooth scrolling to all links in navbar + footer link
-				$(".navbar a, footer a[href='#home']").on('click', function (event) {
-					if (this.hash !== "") {
-						event.preventDefault();
-						var hash = this.hash;
-						$('html, body').animate({
-							scrollTop: $(hash).offset().top
-						}, 900, function () {
-
-							window.location.hash = hash;
-						});
-					}
-				});
-
-				$(".filter-button").click(function () {
-					var value = $(this).attr('data-filter');
-
-					if (value == "all") {
-						$('.filter').show('1000');
-					}
-					else {
-						$(".filter").not('.' + value).hide('3000');
-						$('.filter').filter('.' + value).show('3000');
-
-					}
-				});
-
-				/// maintain state of on click button
-
-			
-
+				$(this).addClass('selected');
 			});
-		</script>
+
+
+			$('[data-toggle="tooltip"]').tooltip();
+
+			// Add smooth scrolling to all links in navbar + footer link
+			$(".navbar a, footer a[href='#home']").on('click', function (event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function () {
+
+						window.location.hash = hash;
+					});
+				}
+			});
+
+			$(".filter-button").click(function () {
+				var value = $(this).attr('data-filter');
+
+				if (value == "all") {
+					$('.filter').show('1000');
+				}
+				else {
+					$(".filter").not('.' + value).hide('3000');
+					$('.filter').filter('.' + value).show('3000');
+
+				}
+			});
+
+			/// maintain state of on click button
+
+
+
+		});
+	</script>
 
 
 

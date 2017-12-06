@@ -6,6 +6,7 @@ body {
 	background-position: center center; 
 	background-size: cover; */
 
+
 }
 
 
@@ -166,7 +167,7 @@ html, body {
 } 
 
 
-#bio {
+.bio {
 	padding: 10px 0px 20px 0px;
 	background-color: #FF7D18;
 	color: #fff;
@@ -174,7 +175,7 @@ html, body {
 
 }
 
-#bio h1{
+.bio h1{
 	font-size:25px;
 	font-weight: 200;
 	z-index: 1;
@@ -313,7 +314,6 @@ html, body {
 
 .btn-slide2 span.circle2 {
     display: block;
-    color: #fff;
     position: absolute;
     float: left;
     margin: 5px 28px;
@@ -558,11 +558,11 @@ html, body {
 	
 	#threeD h2{
 		font-size: 22px;
-		letter-spacing: 0.2em;
+		letter-spacing: 0.1em;
 	}
 
-	#bio h1 {
-		letter-spacing: 0.5em!important;
+	.bio h1 {
+		letter-spacing: 0.3em!important;
 	}
 
 	.skills {
@@ -578,7 +578,7 @@ html, body {
 	/* body{
 		background-position: -500px bottom;
 	} */
-	#header{
+	≈{
 		background-position: -700px bottom!important;
 	}
 	.title h1{
@@ -588,7 +588,7 @@ html, body {
 	}
 	.descript{margin-top:40px;}
 
-	#bio h1 {
+	.bio h1 {
 		letter-spacing: 0.3em!important;
 		font-size: 22px;
 	}
