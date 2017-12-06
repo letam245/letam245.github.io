@@ -22,20 +22,27 @@
     width: 7.5%;
     left: 46.5%;
     height: 45px;
-    border-bottom: 1px solid #5e5e5e;
+    border-bottom: 1px solid #4F4F4F;
 }
 .filter-button{
     font-size: 15px;
-    text-align: left;
-	color: #FF7D18;
-	margin-bottom: 20px;
+    text-align: left!important;
+	color: #FF7D18!important;
+	margin-bottom: 20px!important;
+	background: transparent!important;
 }
 
-.filter-button:hover
-{
-    color: #4F4F4F;
+.filter-button:hover{
+    color: #4F4F4F!important;
 	animation: pulse2 .3s 2;
 
+}
+
+/* keeping state of the button click */
+
+button.selected{
+	color: #FF1F99!important;
+	box-shadow: none!important;
 }
 
 @keyframes pulse {
@@ -53,9 +60,9 @@
 
 
 .filter-button:active, .filter-button:focus, .filter-button:visited {
-	color: #FF1F99;
-	outline: none;
-	box-shadow: none;
+	color: #FF1F99!important;
+	outline: none!important;
+	box-shadow: none!important;
 }
 
 .port-image{
@@ -121,14 +128,16 @@ textarea.form-control, input.form-control {
 }
 
 .contactBtn {
-    color: #FF7D18;
-    margin-bottom: 120px;
+    color: #FF7D18!important;
+	margin-bottom: 120px!important;
+	background: transparent;
 	text-transform: uppercase;
 	letter-spacing: 1em;
 }
 
 .contactBtn:hover {
 	animation: pulse .3s 2;
+	color: #4F4F4F!important;
 }
 
 /* input.form-control:hover, input.form-control:active, input.form-control:focus input.form-control:visited {
