@@ -338,10 +338,13 @@
 	<div id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 contactLeft">
-					<h2>Contact Me</h2>
-					<hr>
-					<div class="row">
+				<div class="col-sm-4 contactLeft">
+
+					<h2>Contact </h2>
+					<br>
+					<p>Need Web Design, Application Development,<br> IT Consultant Services, or just simply to say hi,<br> feel free to contact
+						me at:</p>
+					<!-- <div class="row">
 						<div class="col-md-5">
 							<p>
 								<span class="plus">E: </span>
@@ -355,11 +358,34 @@
 							</p>
 						</div>
 						<div class="col-md-2"></div>
-					</div>
+					</div> -->
 
 				</div>
 
-				<div class="col-sm-6 contactRight">
+				<div class="col-sm-1"></div>
+
+				<div class="col-sm-3 contactRight">
+					<p><i class="fa fa-edit" aria-hidden="true"></i> Email:</p>
+					<hr>
+					<p><a class="contact" href="mailto: le_t_create@yahoo.com">le_t_create@yahoo.com</a></p>
+				</div>
+
+				
+
+				<div class="col-sm-3 contactRight">
+					<p><i class="fa fa-mobile" aria-hidden="true"></i> Phone</p>
+					<hr>
+					<p><a class="contact phone" href="tel: 909-767-9995"> 909-767-9995</a></p>
+				</div>
+
+				<div class="col-sm-1 arrow">
+					<a href="#home" data-toggle="tooltip" title="TO TOP">
+						<span class="glyphicon glyphicon glyphicon-triangle-top"></span>
+					</a>
+
+				</div>
+
+				<!-- <div class="col-sm-6 contactRight">
 					<form id="contact-form" action="mailto:le_t_create@yahoo.com" method="post" name="validation">
 						<div class="row">
 							<div class="col-sm-6 form-group">
@@ -384,7 +410,7 @@
 						</div>
 					</form>
 
-				</div>
+				</div> -->
 
 
 			</div>
@@ -445,7 +471,7 @@
 			$('[data-toggle="tooltip"]').tooltip();
 
 			// Add smooth scrolling to all links in navbar + footer link
-			$(".navbar a, footer a[href='#home']").on('click', function (event) {
+			$(".navbar a, .arrow a[href='#home']").on('click', function (event) {
 				if (this.hash !== "") {
 					event.preventDefault();
 					var hash = this.hash;

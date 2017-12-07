@@ -9,8 +9,9 @@
 .filterBtn h3 {
 	color: #FF7D18;
 	letter-spacing: 0.2em;
-
+	font-family: 'FontAwesome', serif!important;
 	margin-top: -3px!important;
+	font-size: 25px;
 }
 
 .filter-button {
@@ -92,33 +93,59 @@ button.selected{
 
 /*========== contact  ==========*/
 #contact {
-	margin: 80px 0;
+	margin: 120px 0 150px 0;
 	font-family: 'FontAwesome', sans-serif!important;
 }
 
-.contactLeft > hr {
-    border-top: 1px solid #FF7D18;
-    width: 85%;
-    margin: 30px 0;
-}
-
 .contactLeft > h2 {
-	text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
 	color: #FF7D18;
     font-weight: bold;
-	letter-spacing: 0.05em;
-	margin-top:40px;
+	letter-spacing: 0.2em;
+	margin-top:0px!important;
+	font-family: 'FontAwesome', serif!important;
 }
 
+.contactRight{
+	margin-top:25px!important;
+}
+
+.contactRight > hr {
+    border-top: 1px solid #4F4F4F;
+    width: 82%;
+    margin: 15px 0;
+}
+
+.contactRight > p {
+	color: #FF7D18;
+	letter-spacing: 0.2em;
+}
 a.contact  {
-	color: #4F4F4F
+	color: #4F4F4F;
+	letter-spacing: 0em!important;
 }
 
 a.contact:hover {
 	color: #FF7D18;
 	text-decoration: none;
 }
+
+.glyphicon-triangle-top{
+	color: #FF7D18;
+	opacity: 1!important;
+	margin-top:50px!important;
+}
+
+a.phone {
+	letter-spacing: 0.1em!important;
+}
+
+
+
+
+
+
+/* ============== contact form styling ============== */
 .form-control:focus {
 	outline: 0;
 	box-shadow: none!important;
@@ -199,18 +226,16 @@ textarea.form-control, input.form-control {
 	.webTab {
 		margin-left: -5px!important;
 	}
-	.contactLeft {
-		margin-bottom: 30px;
-	}
-
-	.contactLeft > hr {
-		width: 100%;
-	}
 
 	#contact{
-		margin:20px 0 80px 0;
 		text-align: center;
 	}
+
+	.contactRight > hr {
+		display: none!important;
+	}
+
+	/* ------ contact form styling ------ */
 
 	input.form-control {
 		margin-bottom: 30px;
