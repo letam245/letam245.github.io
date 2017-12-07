@@ -197,7 +197,7 @@ textarea.form-control, input.form-control {
 	}
 
 	.webTab {
-		margin-left: -5px;
+		margin-left: -5px!important;
 	}
 	.contactLeft {
 		margin-bottom: 30px;
