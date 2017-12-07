@@ -183,7 +183,7 @@ html, body {
 	font-size:25px;
 	font-weight: 200;
 	z-index: 1;
-	letter-spacing: 1em;
+	letter-spacing: 0.5em;
 }
 
 #about {

@@ -39,7 +39,7 @@ if(isset($_POST['submitted'])) {
 	}
 		
 	// upon no failure errors let's email now!
-{
+	if(!isset($hasError)) {
 		
 		$subject = 'New message to '.$siteTitle.' from '.$name;
 		$sendCopy = trim($_POST['sendCopy']);
@@ -58,5 +58,5 @@ if(isset($_POST['submitted'])) {
         // set our boolean completion value to TRUE
 		$emailSent = true;
 	}
-
+}
 ?>
