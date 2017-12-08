@@ -215,9 +215,35 @@ img.hideThis  {
 
 /* ============== MODAL CONTROL =============== */
 .modal {
-	top:50px!important;
+	top:40px!important;
 }
 
+.carousel-control.left, .carousel-control.right {
+	background-image: none!important;
+}
+
+.item img{
+	border: 0!important;
+	border-radius: 0!important;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+	margin-right: -40px!important;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+	margin-left: -40px!important;
+}
+
+
+.carousel-caption {
+	letter-spacing: 0.15em;
+	font-size: 20px;
+	font-weight: 300!important;
+	color: #FF7D18!important;
+	text-shadow: none!important;
+	padding-bottom: 20px!important;
+}
 /*========== contact  ==========*/
 #contact {
 	margin: 120px 0 150px 0;
@@ -382,11 +408,31 @@ textarea.form-control, input.form-control {
 	}
 
 
+
+
+
 }
 	
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+	.modal {
+		top:70px!important;
+	}
 
+
+	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+		margin-right: -20px!important;
+	}
+	
+	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+		margin-left: -20px!important;
+	}
+	
+	
+	.carousel-caption {
+		font-size: 15px!important;
+		padding-bottom: 0px!important;
+	}
 }
 	
 /* Custom, iPhone Retina */ 
