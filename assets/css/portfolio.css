@@ -244,6 +244,20 @@ img.hideThis  {
 	text-shadow: none!important;
 	padding-bottom: 20px!important;
 }
+
+a.hbtLink {
+	color:#FF7D18; 
+	text-decoration: underline;
+}
+
+a.hbtLink:hover, a.hbtLink:focus {
+	color: #4F4F4F;
+	text-decoration: none!important;
+	box-shadow: none;
+	outline: none;
+}
+
+
 /*========== contact  ==========*/
 #contact {
 	margin: 120px 0 150px 0;
