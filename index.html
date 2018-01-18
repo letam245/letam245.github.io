@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- favicon -->
-	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -309,7 +309,7 @@
 						</a>
 					</div>
 
-					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
+					<!-- <div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
 						<a href="https://local-spectrum.herokuapp.com/" target="_blank">
 						<div class="hovereffect">
 							<img src="assets/img/project/web/localSpectrum.jpg" class="img-responsive">
@@ -324,7 +324,76 @@
 						</div>
 						</a>
 
+					</div> -->
+
+					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
+						<a data-toggle="modal" data-target=".localspectrum">
+							<div class="hovereffect">
+								<img src="assets/img/project/web/localSpectrum.jpg" class="img-responsive">
+								<div class="overlay">
+									<h2 class="longTxt">Local Spectrum</h2>
+									<p><span class="boldTxt">A sharing platform website:</span> that helps people to discover and share customized goods/services
+										in their areas. Users can search, add reviews and post items (if registered). Read more...
+										<!-- <br>
+										<span class="boldTxt">Technologies:</span> Full Stack Mern – ReactJS, ES6, MongoDB, Yarn, NPM, API's, AJAX, JSON,
+										MVC, Bootstrap, HTML, CSS -->
+									</p>
+								</div>
+							</div>
+						</a>
+
+						<!-- ======== OPEN MODAL HERE ====== -->
+					
+						<div class="modal fade localspectrum" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+						 aria-hidden="true">
+						
+							<div class="modal-dialog modal-lg">
+							
+								<div class="modal-content">
+								
+									<div id="localspectrum" class="carousel slide" data-ride="carousel">
+									
+										<!-- Wrapper for slides -->
+									
+										<div class="carousel-inner">
+										
+											<div class="item active">
+												<div class="spectrumCaption">
+													<h2>Local Spectrum</h2>
+													<p>NodeJS, MongoDB, Express, and ReactJS application that help people to discover and share customized goods/services in their areas. Users can query items within cities that were posted by other users. Users are free to add reviews, comments, and post their own items if they are register.</p>
+													<h5>Live Site: <span class="spectrumText"><a href="https://local-spectrum.herokuapp.com/" target="_blank">https://local-spectrum.herokuapp.com/</a></span></h5>
+													<h5>Status: <span class="spectrumText">Ongoing development with more features to be added and updated</span></h5>
+													<h5>Technologies: <span class="spectrumText">ReactJS, ES6, NodeJS, ExpressJS, MongoDB,Yarn, NPM, API, AJAX, JSON, MVC, Bootstrap, HTML, CSS<span class="spectrumText"></h5>
+													
+													<h2>Pages:</h2>
+												</div>
+													<h5 class="pageText">Search Page: <span class="spectrumText">Fill in item name and location to search for available items that other users posted on the website.</span></h5>
+													<img class="img-responsive" src="assets/img/project/web/spectrumSearch.jpg" alt="...">
+													
+													<h5 class="pageText">Result: <span class="spectrumText">Item(s) will appear after clicking search button if they exist in the database. For example: search for <strong>"macaroon"</strong> in <strong>"Irvine"</strong>, you will find available macaroons.</span></h5>
+													<img class="img-responsive" src="assets/img/project/web/spectrumResult.jpg" alt="...">
+
+													<h5 class="pageText">Posting Comment/Rating: <span class="spectrumText">Click review button to post your review and rating for the item</span></h5>
+													<img class="img-responsive" src="assets/img/project/web/spectrumRating.jpg" alt="...">
+													
+													<h5 class="pageText">Reviews: <span class="spectrumText">Click the item title (MACAROON) to view all the the reviews about the item</span></h5>
+													<img class="img-responsive" src="assets/img/project/web/spectrumReviews.jpg" alt="...">
+
+													<h5 class="pageText">Posting Your Item(s): <span class="spectrumText">Register an account to post your own item(s) on the site</span></h5>
+													<img class="img-responsive" src="assets/img/project/web/spectrumPostItem.jpg" alt="...">
+													<h3 style="text-align: center; color:#FF7D18; margin:40px;">Visit the Live Site: <br><span class="spectrumText"><a href="https://local-spectrum.herokuapp.com/" target="_blank">https://local-spectrum.herokuapp.com/</a></span></h3>
+													
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<!-- ======== END MODAL HERE ====== -->
+
 					</div>
+
 
 					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
 						<a href="https://www.oasistears.com/dry-eye-overview" target="_blank">
@@ -332,7 +401,8 @@
 								<img src="assets/img/project/web/oasistears.jpg" class="img-responsive">
 								<div class="overlay">
 									<h2 class="">OASIS TEARS Website</h2>
-									<p><span class="boldTxt">E-commerce Website Redesign: </span> create clean, user-friendly and easy to navigate for information about dry eye treatments.
+									<p><span class="boldTxt">E-commerce Website Redesign: </span> create clean, user-friendly and easy to navigate for
+										information about dry eye treatments.
 										<br>
 										<span class="boldTxt">Technologies:</span> Telerik Sitefinity Platform, Javascript, jQuery, Bootstrap, HTML, CSS
 									</p>
@@ -376,7 +446,7 @@
 						</a>
 
 					</div>
-					
+
 
 					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
 						<a href="https://yummyburgers.herokuapp.com/" target="_blank">
@@ -396,36 +466,36 @@
 					</div>
 
 					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
-							<a href="https://letam245.github.io/hbt/" target="_blank">
-								<div class="hovereffect">
-									<img src="assets/img/project/web/hbt.jpg" class="img-responsive">
-									<div class="overlay">
-										<h2 class="">HBT Website</h2>
-										<p><span class="boldTxt">Rock Band Website: </span> responsive website design for Heroes Bleed Too rock band
-											<br>
-											<span class="boldTxt">Technologies:</span> Skeleton Framework, jQuery Lightbox Plugin, HTML, CSS
-										</p>
-									</div>
+						<a href="https://letam245.github.io/hbt/" target="_blank">
+							<div class="hovereffect">
+								<img src="assets/img/project/web/hbt.jpg" class="img-responsive">
+								<div class="overlay">
+									<h2 class="">HBT Website</h2>
+									<p><span class="boldTxt">Rock Band Website: </span> responsive website design for Heroes Bleed Too rock band
+										<br>
+										<span class="boldTxt">Technologies:</span> Skeleton Framework, jQuery Lightbox Plugin, HTML, CSS
+									</p>
 								</div>
-							</a>
-	
+							</div>
+						</a>
+
 					</div>
 
 					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
-							<a href="https://letam245.github.io/TrainTimeScheduler/" target="_blank">
-								<div class="hovereffect">
-									<img src="assets/img/project/web/train.jpg" class="img-responsive">
-									<div class="overlay">
-										<h2 class="longTxt">Train Scheduler</h2>
-										<p><span class="boldTxt">Train Time Watcher:</span> provide up-to-date info about various trains' arrival times & how
-											many minutes remain until they arrive at their stations (base on users submission)
-											<br>
-											<span class="boldTxt">Technologies:</span> Firebase, Moment.js, Javascript, jQuery, Bootstrap, HTML, CSS
-										</p>
-									</div>
+						<a href="https://letam245.github.io/TrainTimeScheduler/" target="_blank">
+							<div class="hovereffect">
+								<img src="assets/img/project/web/train.jpg" class="img-responsive">
+								<div class="overlay">
+									<h2 class="longTxt">Train Scheduler</h2>
+									<p><span class="boldTxt">Train Time Watcher:</span> provide up-to-date info about various trains' arrival times & how
+										many minutes remain until they arrive at their stations (base on users submission)
+										<br>
+										<span class="boldTxt">Technologies:</span> Firebase, Moment.js, Javascript, jQuery, Bootstrap, HTML, CSS
+									</p>
 								</div>
-							</a>
-	
+							</div>
+						</a>
+
 					</div>
 
 					<div class="gallery_product col-lg-3 col-md-4 col-sm-6 col-xs-12 filter web">
@@ -846,7 +916,7 @@
 											<div class="item">
 												<a class="hbtLink" href="https://letam245.github.io/hbt/" target="_blank"><img class="img-responsive" src="assets/img/project/graphic/hbt3.jpg" alt="..."></a>
 												<div class="carousel-caption">
-												<a class="hbtLink" href="https://letam245.github.io/hbt/" target="_blank">HBT Website</a>
+													<a class="hbtLink" href="https://letam245.github.io/hbt/" target="_blank">HBT Website</a>
 												</div>
 											</div>
 										</div>

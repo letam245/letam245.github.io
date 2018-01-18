@@ -258,6 +258,39 @@ a.hbtLink:hover, a.hbtLink:focus {
 }
 
 
+.spectrumCaption {
+	/* position: static!important; */
+	text-align: left;
+	margin:20px 30px!important;
+	color: #4F4F4F;
+}
+
+.spectrumCaption > h2, .spectrumCaption > h5 {
+	color: #FF7D18;
+} 
+
+span.spectrumText{
+	font-size: 14px;
+	color:#4F4F4F;
+	font-weight: normal;
+	line-height: 2em;
+}
+
+span.spectrumText > a {
+	color: #4F4F4F!important;
+	text-decoration: underline;
+}
+
+span.spectrumText > a:hover{
+	color: #FF7D18!important;
+}
+
+h5.pageText {
+	color: #FF7D18;
+	margin:30px!important;
+}
+
+
 /*========== contact  ==========*/
 #contact {
 	margin: 120px 0 150px 0;
