@@ -279,6 +279,7 @@ span.spectrumText{
 span.spectrumText > a {
 	color: #4F4F4F!important;
 	text-decoration: underline;
+	
 }
 
 span.spectrumText > a:hover{
@@ -286,10 +287,26 @@ span.spectrumText > a:hover{
 }
 
 h5.pageText {
-	color: #FF7D18;
-	margin:30px!important;
+	background: linear-gradient(-60deg,#ff1f9a,#ff7e19,#fed92a);
+    color: #fff;
+	padding: 30px;
+	margin-top:30px!important;
+	text-transform: uppercase;
+	line-height: 20px;
+
+
 }
 
+h5.pageText > span {
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	text-transform: none;
+}
+
+.spectrumImg {
+	margin-top:-30px;
+
+}
 
 /*========== contact  ==========*/
 #contact {
